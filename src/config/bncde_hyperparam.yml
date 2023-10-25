@@ -1,0 +1,43 @@
+---
+# BNCDE hyperparameter tuning on tau=1 forecast horizon
+
+# tune
+drift_layers:
+  - [16]
+  - [16, 16]
+  - [16, 64, 16]
+  - [16, 64, 64, 16]
+  - [16, 64, 64, 64, 16]
+  
+sd_diffusion:
+  - 0.01
+  - 0.001
+  - 0.0001
+  
+
+# defaults
+learning_rate: 0.0001
+
+hidden_size: 8
+
+mc_samples: 10
+
+prediction_window: 1
+
+method: 'euler'
+
+interpolation_method: 'spline'
+
+control_size: 7
+
+treatment_size: 4
+
+clip_grad: 0.0
+
+batch_size: 64
+
+max_epochs: 500
+
+patience: 10
+
+...

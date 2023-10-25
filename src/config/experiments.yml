@@ -1,0 +1,15 @@
+---
+# Specify local paths of BNCDE and TE-CDE model. Specify prediction window
+
+
+bncde_path: 
+
+tecde_path: 
+
+informative_sampling: False
+
+window: 'one_step'
+
+# window is specified via 'one_step', 'two_step', 'three_step', 'four_step', 'five_step'
+
+...
