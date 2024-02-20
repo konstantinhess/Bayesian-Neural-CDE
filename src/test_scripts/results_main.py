@@ -332,7 +332,7 @@ def run_tests(bncde_path,
                                    coverage_metric_confidence=q)
 
             instance_path = bncde_path
-            _, _, _, _, tecde_coverage_cf, tecde_size_cf, _, _, _, _ = eval_predictions(model_instance, instance_path, data_path,
+            _, _, _, _, bncde_coverage_cf, bncde_size_cf, _, _, _, _ = eval_predictions(model_instance, instance_path, data_path,
                                                                       batch_size,  informative_sampling=informative_sampling, device=device,
                                                                       num_workers=num_workers, only_cf=True)
 
